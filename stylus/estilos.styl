@@ -6,6 +6,8 @@ gris_oscuro = #333333
 gris_claro = #818181
 rojo = #CC2F6F
 azul = #00F
+azulFb = #3D5A98
+azulTw = #5FA9DD
 gris_mas_claro =#F0F0F0
 
 // animacion(parametro)
@@ -38,6 +40,24 @@ ul
 
 	&.gray
 		color gris_claro
+
+.actions-login
+	height 2em
+	padding 1em 0
+	overflow hidden
+	.action-login
+		float left
+		width 50%
+		padding .7em 0
+		&:last-child
+			width 49%
+			border-left 1px solid gris_claro
+	a
+		color gris_claro
+		text-decoration underline
+
+
+	
 
 .right-text
 	text-align right
@@ -118,6 +138,36 @@ ul
 .borde-inferior
 	border-bottom 1px solid gris_claro
 
+
+.btnFbLogin
+.btnTwLogin
+	width 13.6em
+	height 1.81em
+	background azulFb
+	border-radius 3px
+	margin 0 auto
+	margin-bottom .5em
+	display block
+	color white
+	padding .5em
+	.icon
+		font-size 1.2em
+		display block
+		float left
+		padding .2em .5em .2em .2em
+		
+	.text
+		height 22px
+		border-left 1px solid gris_claro
+		font-size .7em
+		display block
+		float left
+		padding .5rem 0 0 1rem
+		
+
+.btnTwLogin
+	background azulTw
+
 .button-menu
 	color gris_oscuro
 	font-size 1.4em
@@ -161,8 +211,36 @@ input
 	padding 0 1em 0 2em
 
 
+.features
+	margin-top 1em
+	.description
+		width 70%
+		text-align center
+		color gris_claro
+		h3
+			color gris_oscuro
+
+	
+
+.imageHome
+	width 0 auto
+	height 25em
+	background url("../img/home.jpg") no-repeat right bottom
+	background-size 100% 100%
+	padding 0 2.4em
+	overflow hidden
+
+.imageLogin
+	width auto
+
+	img
+		width 100%
+
 .left 
 	float left
+
+.logoLogin
+	margin-top 5.2em
 
 .right
 	float right
@@ -171,10 +249,34 @@ input
 .menu
 	display none
 
+.mensaje
+	margin 1em auto
+	padding 1em 0
+	font-size 1.3em
+	color gris_claro
+	width 85%
+	border-top 1px solid gris_claro
 
 .name
 	color gris_oscuro
 
+
+.piePagina
+	background black
+	padding 1em 2em
+	overflow hidden
+	.logo
+		margin 0
+		padding 0
+		background none
+		display block
+
+	.links
+		float right
+		a
+			font-size .8em
+			color white
+			text-decoration underline
 
 .playing
 	&.small
@@ -228,7 +330,7 @@ input
 			cursor pointer
 			display block
 			border-top 5px solid transparent
-			// transition .2s border-top
+			// transition .2s border-to
 			&:hover
 				border-top 5px solid gris_claro
 
@@ -278,6 +380,10 @@ input
 .wrap
 	width 1024px
 
+.welcomeText
+	color white
+	font-size 1.3em
+
 @media screen and (min-width: 480px)
 	.song
 		&:nth-child(even)
@@ -290,6 +396,10 @@ input
 	.playing
 		&.medium
 			width auto
+	.piePagina
+		.links
+			margin-left 2em
+			float left
 
 
 @media screen and (min-width: 1024px)
